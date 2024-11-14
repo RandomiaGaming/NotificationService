@@ -91,7 +91,7 @@ namespace NotificationServiceExample
         }
 
         // Constant path to NotificationService.exe
-        private const string NotificationServicePath = "D:\\ImportantData\\School\\NotificationService\\bin\\Debug\\NotificationService.exe";
+        private const string NotificationServicePath = "D:\\ImportantData\\School\\NotificationService\\NotificationService\\bin\\Release\\NotificationService.exe";
         // Static methods for launching NotificationService.exe
         public static int Launch()
         {
@@ -122,7 +122,7 @@ namespace NotificationServiceExample
             int port = NotificationServiceClient.Launch();
             NotificationServiceClient notificationService = new NotificationServiceClient(port);
             notificationService.Check();
-            notificationService.ShowNotification("Test", "Hello World", "C:\\Users\\RandomiaGaming\\Desktop\\Fox.jpg");
+            notificationService.ShowNotification("Test", "Hello World", "C:\\Users\\RandomiaGaming\\Desktop\\Icon.jpg");
             notificationService.Exit();
         }
     }
